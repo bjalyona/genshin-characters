@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+body {
+  background-color: #f4f3ee;
+}
+.navbar {
+  background-color: #4a2578;
+  color: #f4f3ee;
+  font-size: 20px;
+}
+
+.navbar .container{
+  padding: 0 30px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site_sections li {
+  list-style: none;
+}
+.content_container {
+  margin-top: 30px;
+  padding: 0 30px;
+  background-color: #f4f3ee;
+  color: #302b27;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.characters_content_container, .weapons_content_container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+
+}
+
+
+
+.filter_container {
+  width: 220px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.filter_container h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+
+.characters_cards_container,
+.weapons_cards_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 50px;
+  flex-grow: 1;
+
+}
+
+
+.site_sections{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.sections_item {
+  cursor: pointer;
+}
+
+.vision_filter, .weapon_filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.weapon_card, .character_card {
+  padding-top: 10px;
+  margin: 10px;
+  /* width: 150px;
+  height: 200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dad7d0;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 5px solid #7f4888;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  gap: 10px;
+
+}
+.character_card img {
+  width: 100%;
+}
+.weapon_card img {
+  height: 120px;
+} 
+.weapon_card {
+  font-size: 10px;
+  text-align: center;
+}
+
+.character_descr, .weapon_descr {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+}
+
+.character_descr img, .weapon_descr img {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .characters_container,
+  .weapons_container {
+    flex-direction: column;
+  }
+
+  .filter_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .character_descr {
+    flex-direction: column;
+  }
+}
