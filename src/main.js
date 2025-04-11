@@ -1,8 +1,7 @@
-import './style.css'
-
 document.addEventListener('DOMContentLoaded', () => {
     initApp();
 });
+
 async function initApp() {
     loadCharacters();
     checkURL();
